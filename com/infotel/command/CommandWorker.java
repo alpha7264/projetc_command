@@ -1,13 +1,14 @@
-package command;
+package com.infotel.tpthreads;
 
-public class CommandWorker extends Command {
+public class CommandWorker implements Command{
 
-	public static void main(String[] args) {
-		Thread t = new Thread() {
-			public void run() {
-				System.out.println("");
-			}
-		};
-		t.start();
+	public CommandWorker() {
+		
+	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
 	}
 }
