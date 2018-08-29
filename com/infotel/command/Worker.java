@@ -1,6 +1,6 @@
 package com.infotel.tpthreads;
 
-public interface Command{
+public interface Worker{
 	public void execute();
 	
 }
