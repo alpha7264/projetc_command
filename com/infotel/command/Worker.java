@@ -1,4 +1,4 @@
-package com.infotel.tpthreads;
+package com.infotel.command;
 
 public interface Worker{
 	public void execute();
