@@ -5,6 +5,7 @@ public class WorkerSync implements Worker {
 
 	@Override
 	public void run() {
+		System.out.println("Exécution synchrone");
 		action1();
 		action2();
 		

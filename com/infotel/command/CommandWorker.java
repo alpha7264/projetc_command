@@ -4,11 +4,11 @@ import java.util.List;
 
 public class CommandWorker {
 
-	List<Command> commands;
+	List<Worker> workers;
 	int currentIndex;
 
 	public CommandWorker() {
-		commands = new ArrayList<Command>();
+		workers = new ArrayList<Worker>();
 		currentIndex = 0;
 	}
 
@@ -21,10 +21,10 @@ public class CommandWorker {
 	}
 
 	public void play() {
-		commands.get(currentIndex).execute();
+		workers.get(currentIndex).run();
 	}
 
-	public void addCommand(Command command) {
-		commands.add(command);
+	public void addCommand(Worker worker) {
+		workers.add(worker);
 	}
 }

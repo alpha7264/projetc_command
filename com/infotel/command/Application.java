@@ -4,8 +4,12 @@ public class Application {
 
 	public static void main(String[] args) {
 		
-		//CommandWorker cw = new CommandWorker(true);
-		//cw.play();
+		CommandWorker cw = new CommandWorker();
+		cw.addCommand(new WorkerAsync());
+		cw.addCommand(new WorkerSync());
+		cw.play();
+		cw.next();
+		cw.play();
 		
 		
 	}
