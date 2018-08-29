@@ -1,6 +1,6 @@
 package projetc_command.com.infotel.command;
 
-public interface Worker{
+public interface Command{
 	public void execute();
 	
 }
